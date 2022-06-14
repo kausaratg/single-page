@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: url(bg-intro-desktop.png);
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(195, 15, 15, 0.6);
+}
+main{
+    display: flex;
+    width: 80%;
+    margin-left: 11%;
+}
+/* 13%; */
+.one{
+    width: 45%;
+    color: white;
+    height: 20vh;
+    margin-top: 19%;
+}
+.one h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.one p{
+    line-height: 30px;
+}
+.two{
+    margin-left: 20px;
+    height: 50vh;
+    margin-top: 9%;
+}
+#text{
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: rgb(35, 35, 243);
+    color: white;
+    font-size: 15px;
+    /* height: 30px; */
+    padding: 1rem;
+    border-radius: 10px;
+}
+form{
+    background-color: white;
+    color: black;
+    padding: 2rem;
+}
+input{
+    max-width: 25rem;
+    padding: 0.5rem;
+    padding-right: 200px;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+}
+button{
+    width: 26rem;
+    background-color: rgb(31, 241, 31);
+    border:1px solid rgb(31, 241, 31) ;
+    height: 2.5rem;
+    color: white; 
+}
+#last{
+    margin: 1.5rem;
+    font-size: 12px;
+    text-align: center;
+}
+#last span{
+    color: red;
+}
+
+@media screen and (max-width: 800px){
+    main{
+        display: block;
+        margin-left: 2rem;
+    }
+    .overlay{
+        width: 100%;
+        height: 100vh;
+    }
+    .one{
+        width: 100%;
+        text-align: center;
+    }
+    .two{
+        margin-top: 5rem;
+    }
+    input{
+        padding-right: 0;
+        width: 25rem;
+    }
+    form{
+        width: fit-content;
+    }
+    button{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .overlay{
+        width: fit-content;
+        height: max-content;
+    }
+    main{
+        margin-left: 0.2rem;
+    }
+    form{
+        width: fit-content;
+    }
+    .one{
+        margin-top: 1rem;
+    }
+    .two{
+       margin-top: 9rem; 
+    }
+    input{
+        width: 17rem;
+    }
+    button{
+        width: 17rem;
+    }
+
+}
